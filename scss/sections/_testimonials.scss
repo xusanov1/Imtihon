@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+#testimonials {
+
+    padding-top: 100px;
+
+    .btn {
+        padding-left: 560px;
+
+        button {
+            padding: 4px 20px;
+            border-radius: 12px;
+            border: none;
+            background-color: #E5E7EB;
+        }
+    }
+
+
+    .wrapper {
+        .subtitle {
+
+            p {
+                padding-left: 450px;
+                font-size: 20px;
+                color: #4B5563;
+                padding-top: 20px;
+                padding-bottom: 50px;
+            }
+        }
+
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .card {
+                margin: 1rem;
+                width: 300px;
+                height: 400px;
+                padding: .5rem 1rem;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                box-shadow: 0 12px 32px 4px rgba(black, .2);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: .2s;
+
+                h2 {
+                    padding-top: 20px;
+                }
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+
+                .desc {
+                    text-align: center;
+                    padding-top: 50px;
+                }
+
+                p {
+                    padding-top: 50px;
+                    color: #484848;
+                }
+
+
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #testimonials {
+        .btn{
+            padding-left: 350px;
+        }
+        .wrapper {
+            .subtitle {
+                p {
+                    padding-left: 250px;
+                    font-size: 20px;
+                    color: #4B5563;
+                    padding-top: 20px;
+                    padding-bottom: 50px;
+                }
+
+            }
+            .cards{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                padding-left: 100px;
+
+                .card{
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #testimonials {
+        .btn{
+            padding-left: 130px;
+        }
+        .wrapper {
+            .subtitle {
+                p {
+                    padding-left: 50px;
+                    font-size: 20px;
+                    color: #4B5563;
+                    padding-top: 20px;
+                    padding-bottom: 50px;
+                }
+
+            }
+            .cards{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                padding-left: 20px;
+
+                .card{
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,196 @@
+#work {
+    padding-top: 100px;
+
+    .btn {
+        padding-left: 600px;
+
+        button {
+            padding: 4px 20px;
+            border-radius: 12px;
+            border: none;
+            background-color: #E5E7EB;
+        }
+    }
+
+    .wrapper {
+
+        .subtitle {
+
+            p {
+                padding-left: 450px;
+                font-size: 20px;
+                color: #4B5563;
+                padding-top: 20px;
+                padding-bottom: 50px;
+            }
+        }
+
+
+        .grid {
+            padding-bottom: 50px;
+
+
+            .cont {
+
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding-bottom: 100px;
+                padding: 50px;
+                width: 1152px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+
+                .right {
+
+                    h4 {
+                        font-size: 20px;
+                        color: #111827;
+                        padding-bottom: 20px;
+                    }
+
+                    p {
+                        width: 480px;
+                        line-height: 24px;
+                        color: #4B5563;
+                        padding-bottom: 20px;
+
+                    }
+
+                    .git {
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        // grid-template-rows: repeat(3, 1fr);
+                        grid-row-gap: 10px;
+
+                        button {
+                            padding: 4px 20px;
+                            border-radius: 12px;
+                            border: none;
+                            background-color: #E5E7EB;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .hug {
+
+                        button {
+                            border: none;
+                            padding-top: 20px;
+                            background-color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #work {
+        padding-top: 50px;
+
+        .btn {
+            padding-left: 130px;
+        }
+
+        .wrapper {
+
+            .subtitle {
+                p {
+                    padding-top: 10px;
+                    padding-left: 10px;
+                }
+            }
+
+            .grid {
+
+                .cont {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    padding-bottom: 100px;
+                    padding: 20px;
+                    width: 822px;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+                    .left {
+
+
+                        img {
+                            width: 750px;
+                        }
+                    }
+
+                    .right{
+                        p{
+                            width: 350px;
+                        }
+
+                        .git{
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-row-gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #work {
+        padding-top: 50px;
+
+        .btn {
+            padding-left: 130px;
+        }
+
+        .wrapper {
+
+            .subtitle {
+                p {
+                    padding-top: 10px;
+                    padding-left: 10px;
+                }
+            }
+
+            .grid {
+
+                .cont {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    padding-bottom: 100px;
+                    padding: 20px;
+                    width: 352px;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+                    .left {
+
+
+                        img {
+                            width: 330px;
+                        }
+                    }
+
+                    .right{
+                        p{
+                            width: 330px;
+                        }
+
+                        .git{
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-row-gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

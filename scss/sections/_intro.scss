@@ -1,0 +1,111 @@
+#intro {
+
+    padding-top: 120px;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .wrapper_left {
+            padding-top: 50px;
+
+            h1 {
+                font-size: 60px;
+                font-weight: 700;
+                color: #111827;
+            }
+
+            p {
+                font-weight: 400;
+                color: #4B5563;
+                padding-bottom: 40px;
+            }
+
+            .point {
+                padding-top: 10px;
+                display: flex;
+                align-items: center;
+            }
+
+            .media {
+                display: flex;
+                align-items: center;
+                padding-top: 20px;
+            }
+        }
+
+        .wrapper_right {
+            padding-top: 100px;
+
+            .back {
+                z-index: -2;
+                transform: translateX(350px);
+
+            }
+
+            .mukh {
+                z-index: 2;
+                transform: translateY(-30px);
+
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #intro{
+        padding-top: 10px;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .wrapper_left {
+
+            width: 200px;
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        .wrapper_right {
+            padding-top: 10px;
+        }
+    }
+}
+}
+@media only screen and (max-width: 768px) {
+    #intro {
+        padding-top: 15px;
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            .wrapper_right {
+                padding-top: 5px;
+
+                .back {
+                    padding-top: 50px;
+                    z-index: -2;
+                    transform: translateX(10px);
+                }
+
+                .mukh{
+                    transform: translateY(-350px);
+                }
+
+                .wrapper_left {
+                    padding-top: 10px;
+
+                    h1 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

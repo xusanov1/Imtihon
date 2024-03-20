@@ -1,0 +1,71 @@
+#skils{
+
+    .btn{
+        padding-left: 600px;
+
+        button{
+            padding: 4px 20px;
+            border-radius: 12px;
+            border: none;
+            background-color: #E5E7EB;
+        }
+    }
+
+    .wrapper{
+
+        p{
+            font-size: 20px;
+            text-align: center;
+            color: #4B5563;
+            padding-top: 20px;
+            padding-bottom: 50px;
+        }
+
+        .grid{
+            padding-left: 70px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 30px;
+        }
+    }
+}
+@media only screen and (max-width: 1024px){
+    #skils{
+        padding-top: 50px;
+
+        .btn{
+            padding-left: 350px;
+        }
+
+        .wrapper{
+
+            .grid{
+                padding-left: 100px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 5px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    #skils{
+        padding-top: 50px;
+
+        .btn{
+            padding-left: 150px;
+        }
+
+        .wrapper{
+
+            .grid{
+                padding-left: 10px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 5px;
+            }
+        }
+    }
+}
