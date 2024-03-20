@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./scss/theme/dark-mode.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.min.css">
     <title>Portfolio</title>
 </head>
@@ -23,50 +24,59 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__list--item">
-                            <a href="index.html">About</a>
+                            <a href="#intro">About</a>
                         </li>
                         <li>
-                            <a href="index.html">Work</a>
+                            <a href="#work">Work</a>
                         </li>
                         <li>
-                            <a href="index.html">Testimonials</a>
+                            <a href="#testimonials">Testimonials</a>
                         </li>
                         <li>
-                            <a href="index.html">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="btn">
-                    <i class='bx bx-sun bx-md bx-spin'></i>
+                    <button style="background-color: #fff; color: black; border: none;" onclick="myFunction()"><i class='bx bx-sun bx-md bx-spin'></i></button>
                     <a href="https://t.me/programmer_n"><button>Download CV</button></a>
                 </div>
+                <script>
+                    function myFunction() {
+                        var element = document.body;
+                        element.classList.toggle("dark-mode");
+                        var element = document.body;
+                        element.classList.toggle(".card");
+                    }
+                </script>
                 <div class="menu">
-                    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+                    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none; background-color: #fff;" id="mySidebar">
                         <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
                         <a href="#" class="w3-bar-item w3-button">Home</a>
                         <a href="#" class="w3-bar-item w3-button">About</a>
                         <a href="#" class="w3-bar-item w3-button">Testimonials</a>
-                      </div>
-                      
-                      <!-- Page Content -->
-                      <div class="w3-teal">
-                        <button class="w3-button w3-teal w3-xlarge" style="border-color: transparent;" onclick="w3_open()">☰</button>
+                    </div>
+
+                    <div class="w3-teal">
+                        <button class="w3-button w3-teal w3-xlarge" style="border-color: transparent; background-color: #fff;"
+                            onclick="w3_open()">☰</button>
                         <div class="w3-container">
                         </div>
-                      </div>
-                      
-                      <script>
-                      function w3_open() {
-                        document.getElementById("mySidebar").style.display = "block";
-                      }
-                      
-                      function w3_close() {
-                        document.getElementById("mySidebar").style.display = "none";
-                      }
-                      </script>
-                          
+                    </div>
+
+                    <script>
+                        function w3_open() {
+                            document.getElementById("mySidebar").style.display = "block";
+                        }
+
+                        function w3_close() {
+                            document.getElementById("mySidebar").style.display = "none";
+                        }
+                    </script>
+
                 </div>
             </div>
+        </div>
     </header>
 
     <main>
@@ -396,7 +406,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contact">
         <div class="container">
             <div class="btn">
                 <button>Get in touch</button>

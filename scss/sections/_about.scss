@@ -18,7 +18,7 @@
 
     .wrapper {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
         .wrapper_left {
 
@@ -42,8 +42,8 @@
         .wrapper_right {
             width: 650px;
 
-            
-            p{
+
+            p {
                 color: #4B5563;
                 line-height: 24px;
 
@@ -53,13 +53,14 @@
                 font-size: 30px;
             }
 
-            .finally{
+            .finally {
                 display: flex;
                 justify-content: space-between;
 
-                ul{
+                ul {
                     padding-left: 20px;
-                    li{
+
+                    li {
                         padding-bottom: 20px;
                         list-style-type: disc;
                     }
@@ -72,24 +73,25 @@
 
 
 @media only screen and (max-width: 1024px) {
-    #about{
+    #about {
         padding-top: 10px;
-        .btn{
+
+        .btn {
             padding-top: 50px;
             padding-left: 1px;
         }
 
-        .wrapper{
+        .wrapper {
             display: grid;
             grid-template-columns: 1fr;
 
-            .wrapper_right{
+            .wrapper_right {
                 padding-top: 10px;
             }
 
-            .wrapper_left{
+            .wrapper_left {
 
-                img{
+                img {
                     width: 100%;
                 }
             }
@@ -99,41 +101,45 @@
 
 
 @media only screen and (max-width: 768px) {
-    #about{
+    #about {
         padding-top: 1px;
-      .btn{
+
+        .btn {
             padding-top: 10px;
             padding-left: 1px;
         }
 
-        .wrapper{
+        .wrapper {
 
-            .wrapper_left{
-                .mukh{
+            .wrapper_left {
+                .mukh {
                     transform: translateY(50px);
                     transform: translateX(-300px);
                 }
-                img{
+
+                img {
                     width: 320px;
+                    
                 }
+
             }
 
-            .wrapper_right{
-                h3{
+            .wrapper_right {
+                h3 {
                     font-size: 20px;
                 }
 
-                p{
+                p {
                     width: 320px;
                     font-size: 10px;
                 }
 
-                ul{
-                    li{
+                ul {
+                    li {
                         font-size: 10px;
                     }
                 }
             }
         }
-}
+    }
 }

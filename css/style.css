@@ -128,6 +128,9 @@ header .menu button {
   border: none;
   background-color: #fff;
 }
+header .menu .btn button {
+  background-color: #fff;
+}
 
 @media only screen and (max-width: 1024px) {
   header .wrapper .nav__list {
@@ -280,6 +283,11 @@ footer .copyright p {
     font-size: 30px;
   }
 }
+@media (prefers-color-scheme: dark) {
+  #intro {
+    background-color: #111827;
+  }
+}
 #about .btn {
   padding-left: 550px;
   padding-bottom: 90px;
@@ -428,7 +436,6 @@ footer .copyright p {
   }
 }
 #experience {
-  background-color: #F9FAFB;
   padding-top: 100px;
 }
 #experience .btn {
@@ -455,12 +462,18 @@ footer .copyright p {
   padding: 30px;
   width: 896px;
   height: 288px;
+  padding-bottom: 20px;
 }
 #experience .wrapper .uzum .cont {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#experience .wrapper .uzum .cont:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: all 0.3s ease-in-out;
 }
 #experience .wrapper .uzum .cont h4 {
   font-size: 20px;
@@ -469,9 +482,6 @@ footer .copyright p {
   list-style-type: disc;
   line-height: 24px;
   color: #4B5563;
-}
-#experience .wrapper .uzum .cont .cont:hover {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -559,6 +569,11 @@ footer .copyright p {
   padding: 50px;
   width: 1152px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#work .wrapper .grid .cont:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: all 0.3s ease-in-out;
 }
 #work .wrapper .grid .cont .right h4 {
   font-size: 20px;
@@ -743,4 +758,11 @@ footer .copyright p {
   #testimonials .wrapper .cards .card {
     width: 300px;
   }
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-mode h1 {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

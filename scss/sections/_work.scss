@@ -40,6 +40,13 @@
                 width: 1152px;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
+                
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: rgba(0, 0, 0, 0.10) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                    transition: all 0.3s ease-in-out;
+                }
+
 
                 .right {
 
@@ -60,8 +67,8 @@
                     .git {
                         display: grid;
                         grid-template-columns: repeat(5, 1fr);
-                        // grid-template-rows: repeat(3, 1fr);
-                        grid-row-gap: 10px;
+                            grid-row-gap: 10px;
+
 
                         button {
                             padding: 4px 20px;
